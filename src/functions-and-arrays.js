@@ -111,16 +111,16 @@ function uniquifyArray(wordsUnique) {
   
   for (let i = 0; i < wordsUnique.length; i++) {
     
-    if (!newUnique.includes(wordsUnique[i])) {
+    if (newUnique.indexOf(wordsUnique[i]) === -1 && !newUnique.includes(wordsUnique[i])) {
         newUnique.push(wordsUnique[i])
-    } else {
-      
+    } 
+
     }
     return newUnique;
   }
 
  
-}
+
 
 
 
